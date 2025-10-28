@@ -1,0 +1,314 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, sans-serif;
+    background: #f3f3f3;
+    color: #222;
+}
+
+#wrapper {
+    width: 900px; 
+    margin: 30px auto;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+header {
+      <img src="assets/headerlaman.png" alt="Teknologi Masa Kini">
+}
+
+.judul-banner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.judul-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(100%);
+}
+
+.judul-teks {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #0C090A;
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+    font-family: "Cambria", serif;
+    text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+    header {
+        height: 160px;
+    }
+    .judul-teks {
+        font-size: 22px;
+    }
+}
+
+nav {
+    background: #9F000F;
+    border-bottom: 3px solid #551606;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 12px 20px;
+    display: block;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background: #9F000F;
+    border-radius: 5px;
+}
+
+.content-section {
+    padding: 20px 30px;
+    display: none;
+}
+
+.content-section h2, .content-section h3 {
+    color: #00000;
+}
+
+.banner {
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+#container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+#article-list {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.artikel {
+    display: flex;
+    background: #fafafa;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.artikel:hover {
+    transform: scale(1.02);
+}
+
+.artikel img {
+    width: 150px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.teks {
+    padding: 15px;
+    flex: 1;
+}
+
+.teks h2 {
+    font-size: 18px;
+    margin: 0 0 10px;
+    color: #000000;
+}
+
+.teks p {
+    font-size: 14px;
+    color: #000000;
+    line-height: 1.4em;
+    margin-bottom: 10px;
+}
+
+button {
+    background: #660000;
+    border: none;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #27485c;
+}
+
+.back-btn {
+    margin-top: 15px;
+}
+
+#article-view {
+    flex: 3;
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+#article-view h2 {
+    color: #29465B;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#article-view p {
+    font-size: 15px;
+    line-height: 1.6em;
+}
+
+aside {
+    flex: 1;
+    background: #f0f0f0;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+aside h3 {
+    color: #000000;
+    border-bottom: 2px solid #000000;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+aside ul li {
+    margin: 8px 0;
+}
+
+aside ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+aside ul li a:hover {
+    color: #000000;
+    text-decoration: underline;
+}
+
+.profil-img {
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+.hubungi {
+    margin-top: 15px;
+}
+.hubungi ul {
+    list-style: none;
+    padding: 0;
+}
+.hubungi li {
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+#footer {
+    background: #8B0000;
+    color: white;
+    padding: 15px;
+    font-size: 13px;
+    border-radius: 0 0 6px 6px;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.footer-container .column {
+    flex: 1;
+}
+.footer-container h2 {
+    font-size: 14px;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 4px;
+}
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #fff;
+    margin-top: 10px;
+    padding-top: 8px;
+    font-size: 12px;
+}
+
+@media (max-width: 950px) {
+    #wrapper {
+        width: 95%;
+    }
+    #container {
+        flex-direction: column;
+    }
+    aside {
+        width: 100%;
+        order: 2;
+    }
+    #article-list, #article-view {
+        order: 1;
+    }
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .artikel {
+        flex-direction: column;
+    }
+
+    .artikel img {
+        width: 100%;
+        height: 180px;
+    }
+
+    .teks {
+        padding: 10px;
+    }
+
+    #article-view, aside {
+        padding: 10px;
+    }
+}
